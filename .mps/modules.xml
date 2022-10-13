@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="MPSProject">
+    <projectModules>
+      <modulePath path="$PROJECT_DIR$/languages/JCEFMinimal/JCEFMinimal.mpl" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/JCEFMinimal/runtime/JCEFMinimal.runtime.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/JCEFMinimal/sandbox/JCEFMinimal.sandbox.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/Jackson.stubs/Jackson.stubs.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/WebApp/WebApp.msd" folder="" />
+    </projectModules>
+  </component>
+</project>
