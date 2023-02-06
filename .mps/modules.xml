@@ -5,6 +5,7 @@
       <modulePath path="$PROJECT_DIR$/languages/JCEFMinimal/JCEFMinimal.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/JCEFMinimal/runtime/JCEFMinimal.runtime.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/JCEFMinimal/sandbox/JCEFMinimal.sandbox.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/JCEFMinimal.plugin/JCEFMinimal.plugin.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/Jackson.stubs/Jackson.stubs.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/WebApp/WebApp.msd" folder="" />
     </projectModules>

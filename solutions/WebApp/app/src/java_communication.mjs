@@ -36,6 +36,9 @@
          * @param {string} data
          */
         post(tag, data) {
+          if(!window['__IntelliJTools']["___jcefMessagePipePostToIdeFunction"]) {
+            return; // we are opening the application without JCEF
+          }
           try {
             window['__IntelliJTools']["___jcefMessagePipePostToIdeFunction"](JSON.stringify({type: tag, data}));
             console.log("Posting to " + tag);

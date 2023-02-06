@@ -3,7 +3,7 @@
 ## Features
 
 - load a webapp using [JointJS](https://www.jointjs.com/) ([demo application](https://resources.jointjs.com/demos/directed-graph))
-- two way communication between MPS and JS with a kind of message bus (similar to web sockets)
+- two way communication between MPS and JS with a kind of message bus (similar to web sockets) + a solution with WebSockets (**NEW**)
 
 ## Requirements
 
@@ -37,6 +37,12 @@ To make a change in the webapp, edit the app.mjs/index.html file (don't edit the
 ![screenshot](screenshot.png)
 
 Changes in the Graph can be send to the browser by pressing the `Load MPS data` button.
+
+## JCEF JS communication vs WebSockets
+
+Both communications methods are event based and work by sending and listening to events. The JCEF JS communication only works when the browser is embeded into MPS because it relies on JCEF.
+The WebSockets communication works also with local running web applicaitons. The button `Send data via WebSocket` in the MPS editor can be used to send a message to all connected clients.
+Make sure that the MPS project is opened first because the builtin netty server of the IntelliJ platform is used as the server. If the web application is started first (`yarn start`) it can't connect to the web socket server. The server is running on port 9000. In JS the connection can be established by calling `new WebSocket("ws://localhost:9000")` and calling the method `send` to send a message. The MPS and JS implementation for the JCEF communication and WebSocket communication in this project require that the message are serialized objects of the form `{ type: string, data: string}`.
 
 ## Open questions
 

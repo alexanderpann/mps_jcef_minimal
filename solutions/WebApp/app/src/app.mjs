@@ -8,6 +8,9 @@ function getMessagePipe() {
 	return window.__IntelliJTools.messagePipe;
 }
 
+function getWebSocketPipe() {
+	return window.websocketPipe;
+}
 
 function create_mps_error() {
     getMessagePipe().post("error", "Hello from JS");
@@ -15,6 +18,10 @@ function create_mps_error() {
 
 function request_data() {
 	getMessagePipe().post("request_data", undefined);
+}
+
+function request_data_websocket() {
+    getWebSocketPipe().post("request_data", "r:5e97007c-fbfd-4391-a73e-647fb49fa2bc(JCEFMinimal.sandbox)/6666301319363610860")
 }
 
 function openDevTools() {
@@ -62,13 +69,6 @@ getMessagePipe().subscribe("receive_data", function(data) {
     }
 })
 
-
-$("#errorBtn").click(create_mps_error);
-$("#refreshDataBtn").click(request_data);
-$("#loadLocalDataBtn").click(updateFromLocalData)
-$("#openDevToolBtn").click(openDevTools)
-$("#reloadAppBtn").click(reloadApp)
-
 getMessagePipe().subscribe("receive_data", function(data) {
     if (data !== 'undefined' && data !== null) {
         try {
@@ -80,6 +80,47 @@ getMessagePipe().subscribe("receive_data", function(data) {
         console.error("Received data event without data");
     }
 })
+
+
+$("#errorBtn").click(create_mps_error);
+$("#refreshDataBtn").click(request_data);
+$("#refreshDataWebSocketBtn").click(request_data_websocket);
+$("#loadLocalDataBtn").click(updateFromLocalData)
+$("#openDevToolBtn").click(openDevTools)
+$("#reloadAppBtn").click(reloadApp)
+
+getMessagePipe().subscribe("receive_data", function(data) {
+    receive_data(data)
+})
+
+getWebSocketPipe().subscribe("receive_data", function(data) {
+    receive_data_websocket(data)
+})
+
+function receive_data(data) {
+    if (data !== 'undefined' && data !== null) {
+        try {
+            updateData(JSON.parse(data));
+        } catch(e) {
+            getMessagePipe().post("error", "Invalid JSON received:" + e.toString());
+        }
+    } else{
+        console.error("Received data event without data");
+    }
+}
+
+function receive_data_websocket(data) {
+    console.log("Receiced data:" + data)
+    if (data !== 'undefined' && data !== null) {
+        try {
+            updateData(JSON.parse(data));
+        } catch(e) {
+            getWebSocketPipe().post("error", "Invalid JSON received:" + e.toString());
+        }
+    } else{
+        console.error("Received data event without data");
+    }
+}
 
 var Shape = joint.dia.Element.define('demo.Shape', {
     z: 2,
