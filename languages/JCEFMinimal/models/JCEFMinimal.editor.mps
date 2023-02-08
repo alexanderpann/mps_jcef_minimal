@@ -18,6 +18,7 @@
     <import index="cj4x" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor(MPS.Editor/)" />
     <import index="f4zo" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor.cells(MPS.Editor/)" />
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
+    <import index="wfhs" ref="r:23fc7991-3410-40ea-8866-7302714f0309(JCEFMinimal.demo.browser)" />
     <import index="svov" ref="r:61092325-4fef-4cac-960a-598d5319106b(JCEFMinimal.structure)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
@@ -389,11 +390,11 @@
                                       <ref role="37wK5l" to="dcg0:1okWR_9jMRR" resolve="postMessage" />
                                       <node concept="2OqwBi" id="1okWR_9kr7p" role="37wK5m">
                                         <node concept="Rm8GO" id="1okWR_9kjGO" role="2Oq$k0">
-                                          <ref role="1Px2BO" to="dcg0:2n9AwAthteH" resolve="DemoConnector.TOPIC" />
-                                          <ref role="Rm8GQ" to="dcg0:2n9AwAthvmM" resolve="RECEIVE_DATA" />
+                                          <ref role="1Px2BO" to="wfhs:2n9AwAthteH" resolve="DemoConnector.TOPIC" />
+                                          <ref role="Rm8GQ" to="wfhs:2n9AwAthvmM" resolve="RECEIVE_DATA" />
                                         </node>
                                         <node concept="2OwXpG" id="1okWR_9kIHz" role="2OqNvi">
-                                          <ref role="2Oxat5" to="dcg0:2n9AwAtiBIG" resolve="id" />
+                                          <ref role="2Oxat5" to="wfhs:2n9AwAtiBIG" resolve="id" />
                                         </node>
                                       </node>
                                       <node concept="37vLTw" id="1okWR_9koyx" role="37wK5m">
@@ -454,15 +455,15 @@
                 <property role="TrG5h" value="browser" />
                 <property role="3TUv4t" value="true" />
                 <node concept="3uibUv" id="Y$AzCwN8Q8" role="1tU5fm">
-                  <ref role="3uigEE" to="dcg0:6AnKCUHVR9t" resolve="DemoBrowser" />
+                  <ref role="3uigEE" to="wfhs:6AnKCUHVR9t" resolve="DemoBrowser" />
                 </node>
                 <node concept="2OqwBi" id="Y$AzCwN90j" role="33vP2m">
-                  <node concept="2YIFZM" id="Y$AzCwN90k" role="2Oq$k0">
-                    <ref role="1Pybhc" to="dcg0:12kQyBCJZpP" resolve="BrowserInstances" />
-                    <ref role="37wK5l" to="dcg0:Y$AzCwMmQZ" resolve="getInstance" />
+                  <node concept="2YIFZM" id="LtrOojz5sC" role="2Oq$k0">
+                    <ref role="37wK5l" to="wfhs:Y$AzCwMmQZ" resolve="getInstance" />
+                    <ref role="1Pybhc" to="wfhs:12kQyBCJZpP" resolve="BrowserInstances" />
                   </node>
                   <node concept="liA8E" id="Y$AzCwN90l" role="2OqNvi">
-                    <ref role="37wK5l" to="dcg0:7sZeXoaLSFA" resolve="getOrCreate" />
+                    <ref role="37wK5l" to="wfhs:7sZeXoaLSFA" resolve="getOrCreate" />
                     <node concept="pncrf" id="Y$AzCwN90n" role="37wK5m" />
                     <node concept="1Q80Hx" id="7sZeXoaMarc" role="37wK5m" />
                   </node>
@@ -490,7 +491,7 @@
                   <ref role="3cqZAo" node="Y$AzCwN90i" resolve="browser" />
                 </node>
                 <node concept="liA8E" id="Y$AzCwQtbE" role="2OqNvi">
-                  <ref role="37wK5l" to="dcg0:Y$AzCwNBC6" resolve="addListeners" />
+                  <ref role="37wK5l" to="wfhs:Y$AzCwNBC6" resolve="addListeners" />
                 </node>
               </node>
             </node>
