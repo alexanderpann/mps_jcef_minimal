@@ -8,7 +8,6 @@
 ## Requirements
 
 - MPS 2021.1.4 with the pre-installed Jetbrains Runtime Environment
-- Apache Commons Library plugin (available on the marketplace: preferences --> plugins --> marketplace)
 
 ## Setup
 
