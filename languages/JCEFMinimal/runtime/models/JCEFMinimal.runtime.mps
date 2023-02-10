@@ -29,6 +29,7 @@
     <import index="6udr" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:io.netty.util.concurrent(MPS.IDEA/)" />
     <import index="9lgn" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:io.netty.handler.logging(MPS.IDEA/)" />
     <import index="6oe8" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:io.netty.channel.group(MPS.IDEA/)" />
+    <import index="ap92" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:io.netty.util(MPS.IDEA/)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -193,6 +194,9 @@
         <child id="8276990574895933173" name="catchBody" index="1zc67A" />
         <child id="8276990574895933172" name="throwable" index="1zc67B" />
       </concept>
+      <concept id="8276990574909231788" name="jetbrains.mps.baseLanguage.structure.FinallyClause" flags="ng" index="1wplmZ">
+        <child id="8276990574909234106" name="finallyBody" index="1wplMD" />
+      </concept>
       <concept id="1073239437375" name="jetbrains.mps.baseLanguage.structure.NotEqualsExpression" flags="nn" index="3y3z36" />
       <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ng" index="1B3ioH">
         <child id="1178549979242" name="visibility" index="1B3o_S" />
@@ -207,6 +211,7 @@
       <concept id="1107796713796" name="jetbrains.mps.baseLanguage.structure.Interface" flags="ig" index="3HP615" />
       <concept id="5351203823916750322" name="jetbrains.mps.baseLanguage.structure.TryUniversalStatement" flags="nn" index="3J1_TO">
         <child id="8276990574886367510" name="catchClause" index="1zxBo5" />
+        <child id="8276990574886367509" name="finallyClause" index="1zxBo6" />
         <child id="8276990574886367508" name="body" index="1zxBo7" />
       </concept>
       <concept id="1208890769693" name="jetbrains.mps.baseLanguage.structure.ArrayLengthOperation" flags="nn" index="1Rwk04" />
@@ -2719,6 +2724,20 @@
                             </node>
                             <node concept="37vLTw" id="30fFgn3wITj" role="37wK5m">
                               <ref role="3cqZAo" node="30fFgn3wsy8" resolve="content" />
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="1wplmZ" id="6MLG2uOdASB" role="1zxBo6">
+                      <node concept="3clFbS" id="6MLG2uOdASC" role="1wplMD">
+                        <node concept="3clFbF" id="6MLG2uOdCJn" role="3cqZAp">
+                          <node concept="2OqwBi" id="6MLG2uOdEDg" role="3clFbG">
+                            <node concept="37vLTw" id="6MLG2uOdCJm" role="2Oq$k0">
+                              <ref role="3cqZAo" node="30fFgn3wsy8" resolve="content" />
+                            </node>
+                            <node concept="liA8E" id="6MLG2uOdF_F" role="2OqNvi">
+                              <ref role="37wK5l" to="ap92:~ReferenceCounted.release()" resolve="release" />
                             </node>
                           </node>
                         </node>
