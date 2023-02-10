@@ -606,6 +606,7 @@
         </node>
         <node concept="1SiIV0" id="LtrOojz5Ez" role="3bR37C">
           <node concept="3bR9La" id="LtrOojz5E$" role="1SiIV1">
+            <property role="3bR36h" value="true" />
             <ref role="3bR37D" to="ffeo:1ia2VB5guYy" resolve="MPS.IDEA" />
           </node>
         </node>
@@ -631,6 +632,7 @@
         </node>
         <node concept="1SiIV0" id="LtrOojz5EH" role="3bR37C">
           <node concept="3bR9La" id="LtrOojz5EI" role="1SiIV1">
+            <property role="3bR36h" value="true" />
             <ref role="3bR37D" node="4rwaltliETX" resolve="JCEFMinimal.runtime" />
           </node>
         </node>

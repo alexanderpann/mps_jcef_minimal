@@ -5,10 +5,6 @@ import * as joint from 'jointjs';
 import $ from 'jquery';
 
 function getMessagePipe() {
-	return window.__IntelliJTools.messagePipe;
-}
-
-function getWebSocketPipe() {
 	return window.websocketPipe;
 }
 
@@ -16,12 +12,12 @@ function create_mps_error() {
     getMessagePipe().post("error", "Hello from JS");
 }
 
-function request_data() {
-	getMessagePipe().post("request_data", undefined);
+function request_data_from_node() {
+    getMessagePipe().post("request_data", "r:5e97007c-fbfd-4391-a73e-647fb49fa2bc(JCEFMinimal.sandbox)/6666301319363610860")
 }
 
-function request_data_websocket() {
-    getWebSocketPipe().post("request_data", "r:5e97007c-fbfd-4391-a73e-647fb49fa2bc(JCEFMinimal.sandbox)/6666301319363610860")
+function request_data() {
+    getMessagePipe().post("request_data", null)
 }
 
 function openDevTools() {
@@ -84,7 +80,7 @@ getMessagePipe().subscribe("receive_data", function(data) {
 
 $("#errorBtn").click(create_mps_error);
 $("#refreshDataBtn").click(request_data);
-$("#refreshDataWebSocketBtn").click(request_data_websocket);
+$("#refreshDataFromNodeBtn").click(request_data_from_node);
 $("#loadLocalDataBtn").click(updateFromLocalData)
 $("#openDevToolBtn").click(openDevTools)
 $("#reloadAppBtn").click(reloadApp)
@@ -93,7 +89,7 @@ getMessagePipe().subscribe("receive_data", function(data) {
     receive_data(data)
 })
 
-getWebSocketPipe().subscribe("receive_data", function(data) {
+getMessagePipe().subscribe("receive_data", function(data) {
     receive_data_websocket(data)
 })
 
@@ -115,7 +111,7 @@ function receive_data_websocket(data) {
         try {
             updateData(JSON.parse(data));
         } catch(e) {
-            getWebSocketPipe().post("error", "Invalid JSON received:" + e.toString());
+            getMessagePipe().post("error", "Invalid JSON received:" + e.toString());
         }
     } else{
         console.error("Received data event without data");
@@ -451,5 +447,9 @@ var controls = new LayoutControls({
     'layout': LinkControls.refresh
 }, LinkControls);
 
-controls.layout();
-window.controls = controls;
+window.onload = function() {
+    controls.layout();
+    window.controls = controls;
+    window.websocketPipe.post("documentReady", null)
+}
+

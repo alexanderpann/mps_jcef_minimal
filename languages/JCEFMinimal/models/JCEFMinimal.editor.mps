@@ -14,10 +14,7 @@
     <import index="wd4k" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:org.cef.browser(JDK/)" />
     <import index="dcg0" ref="r:9026cab6-6595-4bed-b672-384d42c87356(JCEFMinimal.runtime)" />
     <import index="hyam" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt.event(JDK/)" />
-    <import index="22ra" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor.update(MPS.Editor/)" />
     <import index="cj4x" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor(MPS.Editor/)" />
-    <import index="f4zo" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor.cells(MPS.Editor/)" />
-    <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
     <import index="wfhs" ref="r:23fc7991-3410-40ea-8866-7302714f0309(JCEFMinimal.demo.browser)" />
     <import index="svov" ref="r:61092325-4fef-4cac-960a-598d5319106b(JCEFMinimal.structure)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
@@ -390,7 +387,7 @@
                                       <ref role="37wK5l" to="dcg0:1okWR_9jMRR" resolve="postMessage" />
                                       <node concept="2OqwBi" id="1okWR_9kr7p" role="37wK5m">
                                         <node concept="Rm8GO" id="1okWR_9kjGO" role="2Oq$k0">
-                                          <ref role="1Px2BO" to="wfhs:2n9AwAthteH" resolve="DemoConnector.TOPIC" />
+                                          <ref role="1Px2BO" to="wfhs:2n9AwAthteH" resolve="Message.TOPIC" />
                                           <ref role="Rm8GQ" to="wfhs:2n9AwAthvmM" resolve="RECEIVE_DATA" />
                                         </node>
                                         <node concept="2OwXpG" id="1okWR_9kIHz" role="2OqNvi">

@@ -7,6 +7,7 @@
       class WebsocketPipeImpl {
 
         socket = new WebSocket("ws://localhost:9000");
+        
 
         constructor() {
             this.socket.onopen = function(e) {
@@ -15,8 +16,7 @@
 
 
               this.socket.onmessage = (event) => {
-                console.log("Message:"+ event.data)
-                this.callBrowserListeners(JSON.parse(event.data))
+                this.callBrowserListeners(JSON.parse(event.data));
               }
               
               this.socket.onclose = (event) => {
@@ -66,7 +66,7 @@
         post(tag, data) {
           try {
             this.waitForConnection(() => {
-              this.socket.send(JSON.stringify({type: tag, data}));
+              this.socket.send(JSON.stringify({type: tag, browserID: window.browserID, data}));
               console.log("Posting to " + tag);
               if (typeof callback !== 'undefined') {
                 callback();
@@ -89,7 +89,7 @@
           }
           }
     
-        callBrowserListeners({type, data}) {
+        callBrowserListeners({type, browserID, data}) {
           const listeners = this.listeners[type];
           if (!listeners) {
             console.warn(`No listeners for messages with tag: ${type}`);
