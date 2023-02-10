@@ -40,6 +40,7 @@
     <import index="alof" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.ide.project(MPS.Platform/)" />
     <import index="id92" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:org.cef.handler(JDK/)" />
     <import index="wd4k" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:org.cef.browser(JDK/)" />
+    <import index="lh16" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:org.cef.network(JDK/)" />
   </imports>
   <registry>
     <language id="a247e09e-2435-45ba-b8d2-07e93feba96a" name="jetbrains.mps.baseLanguage.tuples">
@@ -582,81 +583,103 @@
                     <property role="2bfB8j" value="true" />
                     <ref role="1Y3XeK" to="id92:~CefLoadHandlerAdapter" resolve="CefLoadHandlerAdapter" />
                     <ref role="37wK5l" to="id92:~CefLoadHandlerAdapter.&lt;init&gt;()" resolve="CefLoadHandlerAdapter" />
-                    <node concept="3Tm1VV" id="2eaT3XsU3Xf" role="1B3o_S" />
-                    <node concept="3clFb_" id="2eaT3XsU4Kp" role="jymVt">
-                      <property role="TrG5h" value="onLoadEnd" />
-                      <node concept="3Tm1VV" id="2eaT3XsU4Kq" role="1B3o_S" />
-                      <node concept="3cqZAl" id="2eaT3XsU4Ks" role="3clF45" />
-                      <node concept="37vLTG" id="2eaT3XsU4Kt" role="3clF46">
+                    <node concept="2tJIrI" id="6MLG2uOdL_X" role="jymVt" />
+                    <node concept="3clFb_" id="6MLG2uOdLUo" role="jymVt">
+                      <property role="TrG5h" value="onLoadStart" />
+                      <node concept="3Tm1VV" id="6MLG2uOdLUp" role="1B3o_S" />
+                      <node concept="3cqZAl" id="6MLG2uOdLUr" role="3clF45" />
+                      <node concept="37vLTG" id="6MLG2uOdLUs" role="3clF46">
                         <property role="TrG5h" value="browser" />
-                        <node concept="3uibUv" id="2eaT3XsU4Ku" role="1tU5fm">
+                        <node concept="3uibUv" id="6MLG2uOdLUt" role="1tU5fm">
                           <ref role="3uigEE" to="wd4k:~CefBrowser" resolve="CefBrowser" />
                         </node>
                       </node>
-                      <node concept="37vLTG" id="2eaT3XsU4Kv" role="3clF46">
+                      <node concept="37vLTG" id="6MLG2uOdLUu" role="3clF46">
                         <property role="TrG5h" value="frame" />
-                        <node concept="3uibUv" id="2eaT3XsU4Kw" role="1tU5fm">
+                        <node concept="3uibUv" id="6MLG2uOdLUv" role="1tU5fm">
                           <ref role="3uigEE" to="wd4k:~CefFrame" resolve="CefFrame" />
                         </node>
                       </node>
-                      <node concept="37vLTG" id="2eaT3XsU4Kx" role="3clF46">
-                        <property role="TrG5h" value="httpStatusCode" />
-                        <node concept="10Oyi0" id="2eaT3XsU4Ky" role="1tU5fm" />
+                      <node concept="37vLTG" id="6MLG2uOdLUw" role="3clF46">
+                        <property role="TrG5h" value="transitionType" />
+                        <node concept="3uibUv" id="6MLG2uOdLUx" role="1tU5fm">
+                          <ref role="3uigEE" to="lh16:~CefRequest$TransitionType" resolve="CefRequest.TransitionType" />
+                        </node>
                       </node>
-                      <node concept="3clFbS" id="2eaT3XsU4K$" role="3clF47">
-                        <node concept="3cpWs8" id="44ox$QV6LmF" role="3cqZAp">
-                          <node concept="3cpWsn" id="44ox$QV6LmI" role="3cpWs9">
+                      <node concept="3clFbS" id="6MLG2uOdLUz" role="3clF47">
+                        <node concept="3clFbF" id="6MLG2uOdLUD" role="3cqZAp">
+                          <node concept="3nyPlj" id="6MLG2uOdLUC" role="3clFbG">
+                            <ref role="37wK5l" to="id92:~CefLoadHandlerAdapter.onLoadStart(org.cef.browser.CefBrowser,org.cef.browser.CefFrame,org.cef.network.CefRequest$TransitionType)" resolve="onLoadStart" />
+                            <node concept="37vLTw" id="6MLG2uOdLU_" role="37wK5m">
+                              <ref role="3cqZAo" node="6MLG2uOdLUs" resolve="browser" />
+                            </node>
+                            <node concept="37vLTw" id="6MLG2uOdLUA" role="37wK5m">
+                              <ref role="3cqZAo" node="6MLG2uOdLUu" resolve="frame" />
+                            </node>
+                            <node concept="37vLTw" id="6MLG2uOdLUB" role="37wK5m">
+                              <ref role="3cqZAo" node="6MLG2uOdLUw" resolve="transitionType" />
+                            </node>
+                          </node>
+                        </node>
+                        <node concept="3cpWs8" id="6MLG2uOdMWK" role="3cqZAp">
+                          <node concept="3cpWsn" id="6MLG2uOdMWL" role="3cpWs9">
                             <property role="TrG5h" value="initialJS" />
-                            <node concept="17QB3L" id="44ox$QV6LmD" role="1tU5fm" />
-                            <node concept="3cpWs3" id="44ox$QV5tsx" role="33vP2m">
-                              <node concept="Xl_RD" id="44ox$QV5t_t" role="3uHU7w">
-                                <property role="Xl_RC" value="\&quot;;" />
+                            <node concept="17QB3L" id="6MLG2uOdMWM" role="1tU5fm" />
+                            <node concept="3cpWs3" id="2$WJVzy2dyA" role="33vP2m">
+                              <node concept="Xl_RD" id="6MLG2uOdMWQ" role="3uHU7w">
+                                <property role="Xl_RC" value="window.isJCEF = true;" />
                               </node>
-                              <node concept="3cpWs3" id="44ox$QV5sZi" role="3uHU7B">
-                                <node concept="Xl_RD" id="44ox$QV5s7N" role="3uHU7B">
-                                  <property role="Xl_RC" value="window.browserID = \&quot;" />
+                              <node concept="3cpWs3" id="44ox$QV5tsx" role="3uHU7B">
+                                <node concept="Xl_RD" id="44ox$QV5t_t" role="3uHU7w">
+                                  <property role="Xl_RC" value="\&quot;;" />
                                 </node>
-                                <node concept="37vLTw" id="44ox$QV5tga" role="3uHU7w">
-                                  <ref role="3cqZAo" node="7GG$7VSkbVM" resolve="id" />
+                                <node concept="3cpWs3" id="44ox$QV5sZi" role="3uHU7B">
+                                  <node concept="Xl_RD" id="44ox$QV5s7N" role="3uHU7B">
+                                    <property role="Xl_RC" value="window.browserID = \&quot;" />
+                                  </node>
+                                  <node concept="37vLTw" id="44ox$QV5tga" role="3uHU7w">
+                                    <ref role="3cqZAo" node="7GG$7VSkbVM" resolve="id" />
+                                  </node>
                                 </node>
                               </node>
                             </node>
                           </node>
                         </node>
-                        <node concept="3clFbF" id="44ox$QV5nMe" role="3cqZAp">
-                          <node concept="2OqwBi" id="44ox$QV5opE" role="3clFbG">
-                            <node concept="2OqwBi" id="44ox$QV5o4h" role="2Oq$k0">
-                              <node concept="Xjq3P" id="44ox$QV5nMc" role="2Oq$k0">
+                        <node concept="3clFbF" id="6MLG2uOdMWS" role="3cqZAp">
+                          <node concept="2OqwBi" id="6MLG2uOdMWT" role="3clFbG">
+                            <node concept="2OqwBi" id="6MLG2uOdMWU" role="2Oq$k0">
+                              <node concept="Xjq3P" id="6MLG2uOdMWV" role="2Oq$k0">
                                 <ref role="1HBi2w" node="6AnKCUHVR9t" resolve="DemoBrowser" />
                               </node>
-                              <node concept="2OwXpG" id="44ox$QV5oc4" role="2OqNvi">
+                              <node concept="2OwXpG" id="6MLG2uOdMWW" role="2OqNvi">
                                 <ref role="2Oxat5" to="i5ca:~JBCefBrowserBase.myCefBrowser" resolve="myCefBrowser" />
                               </node>
                             </node>
-                            <node concept="liA8E" id="44ox$QV5oAh" role="2OqNvi">
+                            <node concept="liA8E" id="6MLG2uOdMWX" role="2OqNvi">
                               <ref role="37wK5l" to="wd4k:~CefBrowser.executeJavaScript(java.lang.String,java.lang.String,int)" resolve="executeJavaScript" />
-                              <node concept="37vLTw" id="44ox$QV6MH1" role="37wK5m">
-                                <ref role="3cqZAo" node="44ox$QV6LmI" resolve="initialJS" />
+                              <node concept="37vLTw" id="6MLG2uOdMWY" role="37wK5m">
+                                <ref role="3cqZAo" node="6MLG2uOdMWL" resolve="initialJS" />
                               </node>
-                              <node concept="2OqwBi" id="44ox$QV6u4R" role="37wK5m">
-                                <node concept="37vLTw" id="44ox$QV6tEm" role="2Oq$k0">
+                              <node concept="2OqwBi" id="6MLG2uOdMWZ" role="37wK5m">
+                                <node concept="37vLTw" id="6MLG2uOdMX0" role="2Oq$k0">
                                   <ref role="3cqZAo" to="i5ca:~JBCefBrowserBase.myCefBrowser" resolve="myCefBrowser" />
                                 </node>
-                                <node concept="liA8E" id="44ox$QV6ur5" role="2OqNvi">
+                                <node concept="liA8E" id="6MLG2uOdMX1" role="2OqNvi">
                                   <ref role="37wK5l" to="wd4k:~CefBrowser.getURL()" resolve="getURL" />
                                 </node>
                               </node>
-                              <node concept="3cmrfG" id="44ox$QV5ytg" role="37wK5m">
+                              <node concept="3cmrfG" id="6MLG2uOdMX2" role="37wK5m">
                                 <property role="3cmrfH" value="0" />
                               </node>
                             </node>
                           </node>
                         </node>
                       </node>
-                      <node concept="2AHcQZ" id="2eaT3XsU4K_" role="2AJF6D">
+                      <node concept="2AHcQZ" id="6MLG2uOdLU$" role="2AJF6D">
                         <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
                       </node>
                     </node>
+                    <node concept="3Tm1VV" id="2eaT3XsU3Xf" role="1B3o_S" />
                   </node>
                 </node>
               </node>

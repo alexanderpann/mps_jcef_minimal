@@ -451,5 +451,11 @@ window.onload = function() {
     controls.layout();
     window.controls = controls;
     window.websocketPipe.post("documentReady", null)
+    // hide a few buttons that only make sense when there is a browserID
+    if(!window.isJCEF) {
+        $('#refreshDataBtn').hide();
+        $('#reloadAppBtn').hide();
+        $('#openDevToolBtn').hide();
+    }
 }
 
