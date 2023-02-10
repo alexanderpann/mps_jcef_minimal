@@ -288,10 +288,13 @@
         </node>
       </node>
       <node concept="m$f5U" id="LtrOojz5He" role="m$_yh">
-        <ref role="m$f5T" node="4rwaltliETY" resolve="JCEFCore" />
+        <ref role="m$f5T" node="LtrOojz5w2" resolve="JCEFDemo" />
       </node>
       <node concept="m$_yC" id="LtrOojz5Hf" role="m$_yJ">
         <ref role="m$_y1" to="ffeo:4k71ibbKLe8" resolve="jetbrains.mps.core" />
+      </node>
+      <node concept="m$_yC" id="6cuC_YRH$tD" role="m$_yJ">
+        <ref role="m$_y1" node="4rwaltliETZ" resolve="JCEFMinimal" />
       </node>
       <node concept="3_J27D" id="LtrOojz5Hg" role="m_cZH">
         <node concept="3Mxwew" id="LtrOojz5Hh" role="3MwsjC">
