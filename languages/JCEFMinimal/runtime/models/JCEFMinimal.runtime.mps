@@ -2145,6 +2145,19 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbF" id="76$hnM1USE8" role="3cqZAp">
+          <node concept="2OqwBi" id="76$hnM1UTpF" role="3clFbG">
+            <node concept="37vLTw" id="76$hnM1USE6" role="2Oq$k0">
+              <ref role="3cqZAo" node="1okWR_9jVIR" resolve="message" />
+            </node>
+            <node concept="liA8E" id="76$hnM1UU0x" role="2OqNvi">
+              <ref role="37wK5l" node="7GG$7VSrebL" resolve="setBrowserID" />
+              <node concept="37vLTw" id="76$hnM1UVm5" role="37wK5m">
+                <ref role="3cqZAo" node="76$hnM1UUxZ" resolve="browserID" />
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="3clFbF" id="1okWR_9jVJ0" role="3cqZAp">
           <node concept="2OqwBi" id="1okWR_9jVJ1" role="3clFbG">
             <node concept="37vLTw" id="1okWR_9jVJ2" role="2Oq$k0">
@@ -2223,6 +2236,17 @@
                 </node>
               </node>
             </node>
+            <node concept="2xdQw9" id="76$hnM1UZho" role="3cqZAp">
+              <property role="2xdLsb" value="gZ5fh_4/error" />
+              <node concept="3cpWs3" id="76$hnM1V0r4" role="9lYJi">
+                <node concept="37vLTw" id="76$hnM1V0w8" role="3uHU7w">
+                  <ref role="3cqZAo" node="1okWR_9jVJd" resolve="raw" />
+                </node>
+                <node concept="Xl_RD" id="76$hnM1UZhq" role="3uHU7B">
+                  <property role="Xl_RC" value="Send message:" />
+                </node>
+              </node>
+            </node>
           </node>
         </node>
       </node>
@@ -2231,6 +2255,10 @@
       <node concept="37vLTG" id="1okWR_9jXgA" role="3clF46">
         <property role="TrG5h" value="type" />
         <node concept="17QB3L" id="1okWR_9jXg_" role="1tU5fm" />
+      </node>
+      <node concept="37vLTG" id="76$hnM1UUxZ" role="3clF46">
+        <property role="TrG5h" value="browserID" />
+        <node concept="17QB3L" id="76$hnM1UV2z" role="1tU5fm" />
       </node>
       <node concept="37vLTG" id="1okWR_9jXEL" role="3clF46">
         <property role="TrG5h" value="data" />
