@@ -657,69 +657,43 @@
                 </node>
               </node>
             </node>
+            <node concept="3cpWs8" id="5M3trFUrL2T" role="3cqZAp">
+              <node concept="3cpWsn" id="5M3trFUrL2U" role="3cpWs9">
+                <property role="TrG5h" value="dir" />
+                <node concept="3uibUv" id="5M3trFUrKPz" role="1tU5fm">
+                  <ref role="3uigEE" to="3ju5:~IFile" resolve="IFile" />
+                </node>
+                <node concept="2OqwBi" id="5M3trFUrL2V" role="33vP2m">
+                  <node concept="37vLTw" id="5M3trFUrL2W" role="2Oq$k0">
+                    <ref role="3cqZAo" node="2B26uvZFwLE" resolve="s" />
+                  </node>
+                  <node concept="liA8E" id="5M3trFUrL2X" role="2OqNvi">
+                    <ref role="37wK5l" to="z1c3:~AbstractModule.getModuleSourceDir()" resolve="getModuleSourceDir" />
+                  </node>
+                </node>
+              </node>
+            </node>
             <node concept="3clFbJ" id="2B26uvZFwLJ" role="3cqZAp">
               <node concept="3clFbS" id="2B26uvZFwLK" role="3clFbx">
                 <node concept="3clFbJ" id="2B26uvZFwLL" role="3cqZAp">
                   <node concept="3clFbS" id="2B26uvZFwLM" role="3clFbx">
-                    <node concept="3cpWs8" id="2B26uvZFwLN" role="3cqZAp">
-                      <node concept="3cpWsn" id="2B26uvZFwLO" role="3cpWs9">
-                        <property role="TrG5h" value="bundleHome" />
-                        <node concept="3uibUv" id="2B26uvZFwLP" role="1tU5fm">
-                          <ref role="3uigEE" to="3ju5:~IFile" resolve="IFile" />
-                        </node>
-                        <node concept="2OqwBi" id="2B26uvZFwLQ" role="33vP2m">
-                          <node concept="2OqwBi" id="2B26uvZFwLR" role="2Oq$k0">
-                            <node concept="37vLTw" id="2B26uvZFwLS" role="2Oq$k0">
-                              <ref role="3cqZAo" node="2B26uvZFwLE" resolve="s" />
+                    <node concept="3clFbF" id="3zlfSvpmq8O" role="3cqZAp">
+                      <node concept="37vLTI" id="3zlfSvpmqFA" role="3clFbG">
+                        <node concept="2OqwBi" id="3zlfSvpmspB" role="37vLTx">
+                          <node concept="2OqwBi" id="3zlfSvpmrot" role="2Oq$k0">
+                            <node concept="37vLTw" id="3zlfSvpmr7w" role="2Oq$k0">
+                              <ref role="3cqZAo" node="5M3trFUrL2U" resolve="dir" />
                             </node>
-                            <node concept="liA8E" id="2B26uvZFwLT" role="2OqNvi">
-                              <ref role="37wK5l" to="z1c3:~AbstractModule.getModuleSourceDir()" resolve="getModuleSourceDir" />
+                            <node concept="liA8E" id="3zlfSvpmrWl" role="2OqNvi">
+                              <ref role="37wK5l" to="3ju5:~IFile.getBundleHome()" resolve="getBundleHome" />
                             </node>
                           </node>
-                          <node concept="liA8E" id="2B26uvZFwLU" role="2OqNvi">
+                          <node concept="liA8E" id="3zlfSvpmsVZ" role="2OqNvi">
                             <ref role="37wK5l" to="3ju5:~IFile.getParent()" resolve="getParent" />
                           </node>
                         </node>
-                      </node>
-                    </node>
-                    <node concept="3clFbJ" id="2B26uvZFwLV" role="3cqZAp">
-                      <node concept="3clFbS" id="2B26uvZFwLW" role="3clFbx">
-                        <node concept="3cpWs6" id="2B26uvZFwLX" role="3cqZAp">
-                          <node concept="10Nm6u" id="2B26uvZFwLY" role="3cqZAk" />
-                        </node>
-                      </node>
-                      <node concept="3clFbC" id="2B26uvZFwLZ" role="3clFbw">
-                        <node concept="10Nm6u" id="2B26uvZFwM0" role="3uHU7w" />
-                        <node concept="37vLTw" id="2B26uvZFwM1" role="3uHU7B">
-                          <ref role="3cqZAo" node="2B26uvZFwLO" resolve="bundleHome" />
-                        </node>
-                      </node>
-                    </node>
-                    <node concept="3cpWs6" id="2B26uvZFwM2" role="3cqZAp">
-                      <node concept="2OqwBi" id="2B26uvZFwM3" role="3cqZAk">
-                        <node concept="2OqwBi" id="2B26uvZFwM4" role="2Oq$k0">
-                          <node concept="37vLTw" id="2B26uvZFwM5" role="2Oq$k0">
-                            <ref role="3cqZAo" node="2B26uvZFwLO" resolve="bundleHome" />
-                          </node>
-                          <node concept="liA8E" id="2B26uvZFwM6" role="2OqNvi">
-                            <ref role="37wK5l" to="3ju5:~IFile.getFS()" resolve="getFS" />
-                          </node>
-                        </node>
-                        <node concept="liA8E" id="2B26uvZFwM7" role="2OqNvi">
-                          <ref role="37wK5l" to="3ju5:~IFileSystem.getFile(java.lang.String)" resolve="getFile" />
-                          <node concept="3cpWs3" id="2B26uvZFwM8" role="37wK5m">
-                            <node concept="37vLTw" id="2B26uvZFwM9" role="3uHU7w">
-                              <ref role="3cqZAo" node="2B26uvZFwMz" resolve="path" />
-                            </node>
-                            <node concept="2OqwBi" id="2B26uvZFwMa" role="3uHU7B">
-                              <node concept="37vLTw" id="2B26uvZFwMb" role="2Oq$k0">
-                                <ref role="3cqZAo" node="2B26uvZFwLO" resolve="bundleHome" />
-                              </node>
-                              <node concept="liA8E" id="2B26uvZFwMc" role="2OqNvi">
-                                <ref role="37wK5l" to="3ju5:~IFile.getPath()" resolve="getPath" />
-                              </node>
-                            </node>
-                          </node>
+                        <node concept="37vLTw" id="3zlfSvpmq8N" role="37vLTJ">
+                          <ref role="3cqZAo" node="5M3trFUrL2U" resolve="dir" />
                         </node>
                       </node>
                     </node>
@@ -761,22 +735,6 @@
                     <node concept="Xl_RD" id="5M3trFUrK2q" role="37wK5m">
                       <property role="Xl_RC" value="/" />
                     </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-            <node concept="3cpWs8" id="5M3trFUrL2T" role="3cqZAp">
-              <node concept="3cpWsn" id="5M3trFUrL2U" role="3cpWs9">
-                <property role="TrG5h" value="dir" />
-                <node concept="3uibUv" id="5M3trFUrKPz" role="1tU5fm">
-                  <ref role="3uigEE" to="3ju5:~IFile" resolve="IFile" />
-                </node>
-                <node concept="2OqwBi" id="5M3trFUrL2V" role="33vP2m">
-                  <node concept="37vLTw" id="5M3trFUrL2W" role="2Oq$k0">
-                    <ref role="3cqZAo" node="2B26uvZFwLE" resolve="s" />
-                  </node>
-                  <node concept="liA8E" id="5M3trFUrL2X" role="2OqNvi">
-                    <ref role="37wK5l" to="z1c3:~AbstractModule.getModuleSourceDir()" resolve="getModuleSourceDir" />
                   </node>
                 </node>
               </node>
