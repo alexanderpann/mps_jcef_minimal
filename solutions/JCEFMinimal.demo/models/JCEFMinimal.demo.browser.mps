@@ -2,11 +2,11 @@
 <model ref="r:23fc7991-3410-40ea-8866-7302714f0309(JCEFMinimal.demo.browser)">
   <persistence version="9" />
   <languages>
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="18" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="19" />
     <use id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging" version="0" />
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="1" />
     <use id="446c26eb-2b7b-4bf0-9b35-f83fa582753e" name="jetbrains.mps.lang.modelapi" version="0" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="11" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="12" />
     <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="0" />
     <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="0" />
     <use id="a247e09e-2435-45ba-b8d2-07e93feba96a" name="jetbrains.mps.baseLanguage.tuples" version="0" />
@@ -792,7 +792,7 @@
                                       <ref role="3cqZAo" node="7j54JHsuJAs" resolve="browser" />
                                     </node>
                                     <node concept="liA8E" id="1k45np0X3_5" role="2OqNvi">
-                                      <ref role="37wK5l" to="i5ca:~JBCefBrowser.openDevtools()" resolve="openDevtools" />
+                                      <ref role="37wK5l" to="i5ca:~JBCefBrowserBase.openDevtools()" resolve="openDevtools" />
                                     </node>
                                   </node>
                                 </node>

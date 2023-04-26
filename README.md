@@ -7,7 +7,7 @@
 
 ## Requirements
 
-- MPS 2021.1.4 with the pre-installed Jetbrains Runtime Environment
+- MPS 2022.2 with the pre-installed Jetbrains Runtime Environment
 
 ## Setup
 
